@@ -69,7 +69,7 @@ However I'm not sure if last two statements are required...
 
 ### Example
 
-You can try out an example included into the package, that uses [Express](https://github.com/expressjs/express), [Histone](https://github.com/MegafonWebLab/histone-javascript) and macIconForFile to generate file listing in the browser.
+You can try out an example included into the package, that uses [Express](https://github.com/expressjs/express), [Histone](https://github.com/MegafonWebLab/histone-javascript) and **macIconForFile** to generate file listing in the browser.
 
 ```bash
 npm install mac-file-icon
