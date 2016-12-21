@@ -6,7 +6,7 @@ Inspired and based on:
   * https://github.com/kevinsawicki/mac-extension-icon
   * https://github.com/incbee/NSImage-QuickLook
   
-Retrieves icon, exactly the same way as Finder does it, including QuickLook preview generation in case if it's possible, just check out the example at the end of this page.
+Retrieves icon, exactly the same way as Finder does it, including QuickLook preview generation in case if it's possible, just check out the example at the end of this page. My motivation to write this module was impossiblity to obtain file system's entry icon in Electron, there is simply no method to do that.
   
 ### Installation
 
@@ -69,7 +69,7 @@ However I'm not sure if last two statements are required...
 
 ### Example
 
-You can try out an example included into the package, that uses Express, Histone and macIconForFile to generate file listing in the browser.
+You can try out an example included into the package, that uses [Express](https://github.com/expressjs/express), [Histone](https://github.com/MegafonWebLab/histone-javascript) and macIconForFile to generate file listing in the browser.
 
 ```bash
 npm install mac-file-icon
