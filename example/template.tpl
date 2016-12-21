@@ -79,7 +79,7 @@
 		<div style="position: absolute; border: 1px solid red; top: 20px; bottom: 20px; right: 20px; left: 20px; overflow: auto;">
 			<div class="ui-iconView">
 				<div class="ui-iconView-items">
-					{{for item in getFiles(this.path)}}
+					{{for item in getFiles(this.path)->filter(item => item.name[0] != '.')}}
 						{{var tagName = item.isDir ? 'a' : 'div'}}
 						<{{tagName}} href="?path={{item.path}}" class="ui-iconView-item">
 							<img src="{{item.icon}}" />
