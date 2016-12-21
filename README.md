@@ -1,4 +1,5 @@
 # macIconForFile
+[![npm version](https://badge.fury.io/js/mac-file-icon.svg)](https://npmjs.org/package/mac-file-icon)
 
 Get the native macOS icon for a specific file extension as a PNG image buffer.
 
