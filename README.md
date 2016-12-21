@@ -1,2 +1,4 @@
 # macIconForFile
-Node module to get the icon for any file in the filesystem (macOS only)
+
+Get the native macOS icon for a specific file extension as a PNG image buffer.
+Inspired and pretty much based on https://github.com/kevinsawicki/mac-extension-icon
