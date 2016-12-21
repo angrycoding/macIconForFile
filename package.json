@@ -1,0 +1,22 @@
+{
+	"name": "macIconForFile",
+	"version": "0.0.1",
+	"description": "Get the Finder icon for a file path",
+	"main": "index.js",
+	"keywords": [
+		"Finder",
+		"Preview",
+		"MacOS",
+		"OSX",
+		"Mac",
+		"icon",
+		"NSImage",
+		"Electron"
+	],
+	"author": "Ruslan Matveev",
+	"license": "MIT",
+	"repository": "https://github.com/angrycoding/macIconForFile",
+	"dependencies": {
+		"nan": "^2.4.0"
+	}
+}
