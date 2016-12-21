@@ -4,7 +4,7 @@
 		<style type="text/css">
 
 			html {
-				/*-webkit-font-smoothing: antialiased;*/
+				-webkit-font-smoothing: antialiased;
 				font-family: Helvetica Neue;
 			}
 
