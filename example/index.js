@@ -8,7 +8,7 @@ var server = require('express')();
 Histone.setCache(false)
 
 Histone.setResourceLoader(function(requestURI, ret) {
-	FS.readFile(requestURI, 'UTF-8', function(error, template) {
+	FS.readFile(Path.resolve(__dirname, requestURI), 'UTF-8', function(error, template) {
 		ret(template);
 	});
 });
