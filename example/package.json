@@ -1,0 +1,8 @@
+{
+	"description": "Example of usage",
+	"dependencies": {
+		"mac-file-icon": "latest",
+		"histone": "latest",
+		"express": "latest"
+	}
+}
