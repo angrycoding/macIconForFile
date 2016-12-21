@@ -1,6 +1,6 @@
 var FS = require('fs');
 var Path = require('path');
-var getIconForFile = require('mac-file-icon');
+var getIconForFile = require('..');
 var Histone = require('histone');
 var server = require('express')();
 

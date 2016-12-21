@@ -24,8 +24,8 @@ class MacIconForFile: public Nan::AsyncWorker {
 		}
 
 		void Execute() {
-			NSString* filePath = [NSString stringWithCString:path.c_str() encoding:[NSString defaultCStringEncoding]];
 
+			NSString* filePath = [NSString stringWithUTF8String:path.c_str()];
 			NSURL *fileURL = [NSURL fileURLWithPath:filePath];
 			NSDictionary *dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:true] forKey:(NSString *)kQLThumbnailOptionIconModeKey];
 			CGImageRef ref = QLThumbnailImageCreate(kCFAllocatorDefault, (CFURLRef)fileURL, CGSizeMake(size, size), (CFDictionaryRef)dict);

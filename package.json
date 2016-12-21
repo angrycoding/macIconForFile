@@ -1,6 +1,6 @@
 {
 	"name": "mac-file-icon",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Get the Finder icon for a file path",
 	"main": "index.js",
 	"keywords": [
