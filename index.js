@@ -3,7 +3,7 @@ var extension = (
 	require('./build/Release/macIconForFile.node')
 );
 
-exports.getIconForFile = function(path, ret, size) {
+module.exports = function(path, ret, size) {
 
 	var syncResult;
 
