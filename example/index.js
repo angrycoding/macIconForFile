@@ -42,7 +42,7 @@ server.all('/getIcon', function(request, response) {
 		response.setHeader("Cache-Control", "public, max-age=345600"); // ex. 4 days in seconds.
 		response.setHeader("Expires", new Date(Date.now() + 345600000).toUTCString());
 		response.end(buffer)
-	}, 64);
+	}, 128);
 });
 
 server.all('/', function(request, response) {
