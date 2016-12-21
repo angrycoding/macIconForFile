@@ -6,6 +6,8 @@ Inspired and based on:
   * https://github.com/kevinsawicki/mac-extension-icon
   * https://github.com/incbee/NSImage-QuickLook
   
+Retrieves icon, exactly the same way as Finder does it, including QuickLook preview generation in case if it's possible, just check out the example at the end of this page.
+  
 ### Installation
 
 ```bash
