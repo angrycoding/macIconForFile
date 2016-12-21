@@ -11,7 +11,8 @@
 		"Mac",
 		"icon",
 		"NSImage",
-		"Electron"
+		"Electron",
+		"QuickLook"
 	],
 	"author": "Ruslan Matveev",
 	"license": "MIT",
