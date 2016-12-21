@@ -27,6 +27,7 @@ Histone.register(Histone.Global.prototype, 'getFiles', function(self, args, scop
 					icon: '/getIcon?path=' + fullPath,
 					path: fullPath,
 					name: name,
+					isDir: FS.lstatSync(fullPath).isDirectory()
 				};
 
 

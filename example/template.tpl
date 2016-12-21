@@ -80,10 +80,11 @@
 			<div class="ui-iconView">
 				<div class="ui-iconView-items">
 					{{for item in getFiles(this.path)}}
-						<a href="?path={{item.path}}" class="ui-iconView-item">
+						{{var tagName = item.isDir ? 'a' : 'div'}}
+						<{{tagName}} href="?path={{item.path}}" class="ui-iconView-item">
 							<img src="{{item.icon}}" />
 							<div>{{item.name}}</div>
-						</a>
+						</{{tagName}}>
 					{{/for}}
 				</div>
 			</div>
