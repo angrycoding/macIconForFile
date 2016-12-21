@@ -76,7 +76,7 @@
 	</head>
 	<body>
 
-		<div style="position: absolute; border: 1px solid red; top: 100px; bottom: 100px; right: 100px; left: 100px; overflow: auto;">
+		<div style="position: absolute; border: 1px solid red; top: 20px; bottom: 20px; right: 20px; left: 20px; overflow: auto;">
 			<div class="ui-iconView">
 				<div class="ui-iconView-items">
 					{{for item in getFiles(this.path)}}
