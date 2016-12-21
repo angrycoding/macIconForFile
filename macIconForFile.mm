@@ -1,6 +1,8 @@
 #import <AppKit/AppKit.h>
 #import <nan.h>
 #import <string>
+#import <Cocoa/Cocoa.h>
+#import <QuickLook/QuickLook.h>
 
 class MacIconForFile: public Nan::AsyncWorker {
 
@@ -23,7 +25,25 @@ class MacIconForFile: public Nan::AsyncWorker {
 
 		void Execute() {
 			NSString* filePath = [NSString stringWithCString:path.c_str() encoding:[NSString defaultCStringEncoding]];
-			NSImage* sourceImage = [[NSWorkspace sharedWorkspace] iconForFile:filePath];
+
+			NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+			NSDictionary *dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:true] forKey:(NSString *)kQLThumbnailOptionIconModeKey];
+			CGImageRef ref = QLThumbnailImageCreate(kCFAllocatorDefault, (CFURLRef)fileURL, CGSizeMake(size, size), (CFDictionaryRef)dict);
+
+			NSImage* sourceImage = nil;
+
+			if (ref != NULL) {
+				NSBitmapImageRep *bitmapImageRep = [[NSBitmapImageRep alloc] initWithCGImage:ref];
+				if (bitmapImageRep) {
+					sourceImage = [[NSImage alloc] initWithSize:[bitmapImageRep size]];
+					[sourceImage addRepresentation:bitmapImageRep];
+					[bitmapImageRep release];
+				}
+				CFRelease(ref);
+			}
+
+			if (!sourceImage) sourceImage = [[NSWorkspace sharedWorkspace] iconForFile:filePath];
+
 			NSSize newSize = NSMakeSize(size, size);
 			NSImage* targetImage = [[NSImage alloc] initWithSize: newSize];
 			[sourceImage setScalesWhenResized:YES];

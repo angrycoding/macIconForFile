@@ -7,7 +7,7 @@
 			{
 				"sources": ["macIconForFile.mm"],
 				"link_settings": {
-					"libraries": ["-framework", "AppKit"]
+					"libraries": ["-framework AppKit -framework QuickLook"]
 				}
 			}
 		]]
