@@ -16,6 +16,7 @@
 	],
 	"author": "Ruslan Matveev",
 	"license": "MIT",
+	"os": "darwin",
 	"repository": "https://github.com/angrycoding/macIconForFile",
 	"dependencies": {
 		"nan": "^2.4.0"
