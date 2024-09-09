@@ -1,3 +1,12 @@
+#  💜If you like my projects, you can support me.
+
+| Coin/Symbol | Network | Adress |
+|------|---------|--------|
+| Bitcoin (BTC) | BTC | 1LU7DtLiKkWe3aAXbhRhNAMUFdrapWuAHW |
+| Tether (USDT) | TRC20 | TK7f7TXozWVbkHxdArAJd2rELu725q1Ac5 |
+| Tether (USDT) | TON | UQDI4e7xm_B7O_REaYd5CoyEz1Ki08t0EPlUim022_K9B2xa |
+
+
 # macIconForFile [![npm version](https://badge.fury.io/js/mac-file-icon.svg)](https://npmjs.org/package/mac-file-icon)
 
 Get the native macOS icon for a specific file extension as a PNG image buffer.
